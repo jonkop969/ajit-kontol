@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>AJIT MEMEK</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #a1a09a;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      background-color: #8f7783;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+    button:hover {
+      background-color: #756d71;
+    }
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 5px dashed rgb(3, 3, 3);
+      padding: 20px;
+      background: rgb(83, 82, 82);
+      z-index: 1000;
+      box-shadow: 0 0 20px rgba(211, 15, 15, 0.5);
+    }
+    #popup img {
+      width: 1000px;
+      border-radius: 20px;
+    }
+    #close-btn {
+      margin-top: 10px;
+      background-color: red;
+      color: white;
+      padding: 5px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>😂 KLIK BUAT LIAT BOCAH KONTOL! 😂</h1>
+  <button onclick="showPopup()">TAMPILKAN ANOMALI AJIT BEJIT</button>
+
+  <div id="popup">
+    <img src="ajitkontol.jpeg" alt="Orang Lucu">
+    <br>
+    <button id="close-btn" onclick="hidePopup()">Tutup</button>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+    function hidePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
